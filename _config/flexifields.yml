@@ -1,0 +1,6 @@
+---
+name: flexifields
+---
+
+FlexiFormMultiSelectField:
+  can_create: false
