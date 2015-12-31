@@ -78,10 +78,11 @@ class USStateDropdownField extends DropdownField
         'WY' => "Wyoming"
     );
 
-    function __construct($name, $title = null, $source = null, $value = "", $form = null, $emptyString = null)
+    public function __construct($name, $title = null, $source = null, $value = "", $form = null, $emptyString = null)
     {
-        if (! $source)
+        if (! $source) {
             $source = self::$states;
+        }
 
         if (! $emptyString) {
             $this->hasEmptyDefault = $this->stat('default_has_empty');
@@ -95,11 +96,12 @@ class USStateDropdownField extends DropdownField
     {
         $items = array();
         foreach (self::$states as $key => $value) {
-            if ($key)
+            if ($key) {
                 $items[] = array(
                     'Title' => $value,
                     'Value' => $key
                 );
+            }
         }
         return new ArrayList($items);
     }

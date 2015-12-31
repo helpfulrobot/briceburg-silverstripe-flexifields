@@ -18,5 +18,4 @@ class FlexiFormUSStateField extends FlexiFormField
         $field->description = 'Optional. This value will be preselectd.';
         return $field;
     }
-
 }

@@ -26,5 +26,4 @@ class FlexiFormJQMultiSelectField extends FlexiFormMultiSelectField
 
         return $field;
     }
-
 }

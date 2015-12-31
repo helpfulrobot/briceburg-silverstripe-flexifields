@@ -10,21 +10,21 @@ class FlexiFieldsUtil
         return basename(dirname(dirname(__DIR__)));
     }
 
-    public static function css(Array $cssFiles)
+    public static function css(array $cssFiles)
     {
         $moduleDir = self::get_module_dir();
 
-        foreach($cssFiles as $file) {
+        foreach ($cssFiles as $file) {
             Requirements::css($moduleDir . '/css/' . $file);
         }
     }
 
 
-    public static function js(Array $jsFiles)
+    public static function js(array $jsFiles)
     {
         $moduleDir = self::get_module_dir();
 
-        foreach($jsFiles as $file) {
+        foreach ($jsFiles as $file) {
             Requirements::javascript($moduleDir . '/js/' . $file);
         }
     }
